@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/userProfileRelativeLayout"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/profile_background_cropped"
+    android:layout_width="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/view_border">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/userAvatarCardView"
+                android:layout_width="82dp"
+                android:layout_height="82dp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:innerRadius="0dp"
+                android:shape="ring"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/userAvatarImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/userFullNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userAvatarCardView"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/wendy_one"
+                android:maxWidth="450dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

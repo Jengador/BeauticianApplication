@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BeauticianApplication</string>
+    <string name="corporate_name">Corporate Name</string>
+    <string name="enterprise_name">Rapunzel</string>
+    <string name="user_name_place_holder">User Name</string>
+    <string name="password_place_holder">Password</string>
+    <string name="login_button_label">Login</string>
+    <string name="wrong_credentials_warning">Wrong Credentials!</string>
+    <string name="career_path_label">My Career Path</string>
+    <string name="hr_manager_label">My HR Manager</string>
+    <string name="inbox_label">My Inbox</string>
+    <string name="financial_situation_label">My Financial\nSituation</string>
+    <string name="services_label">My Services</string>
+    <string name="service_location_label">My Service\nLocations</string>
+    <string name="past_appointments">My Past\nAppointments</string>
+    <string name="past_appointments_label">My Past Appointments</string>
+    <string name="past_appointments_spinner_prompt">Select a Time Slot</string>
+    <string name="incoming_appointments_label">My Incoming Appointments</string>
+    <string name="agenda_label">My Agenda</string>
+    <string name="my_service_hours_label">My Service Hours</string>
+</resources>

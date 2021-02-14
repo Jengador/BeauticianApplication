@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myAgendaLayout"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:visibility="visible"
+    android:background="#A77474">
+
+    <LinearLayout
+        android:id="@+id/myAgendaTitleLayout"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/agenda_label"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/myAgendaMonthYearTextView"
+        android:layout_below="@id/myAgendaTitleLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_below="@id/myAgendaMonthYearTextView"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:paddingTop="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_height="250dp"
+        app:compactCalendarTargetHeight="250dp"
+        app:compactCalendarTextSize="12sp"
+        app:compactCalendarBackgroundColor="#FFFFFF"
+        app:compactCalendarTextColor="#000000"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#E57373"
+        app:compactCalendarCurrentDayBackgroundColor="#FFFFFF"
+        app:compactCalendarMultiEventIndicatorColor="#4CAF50"
+        />
+
+    <TextView
+        android:id="@+id/myAgendaChosenDate"
+        android:layout_below="@id/compactcalendar_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/aclonica"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+        <ListView
+            android:layout_below="@id/myAgendaChosenDate"
+            android:id="@+id/myAgendaListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="#CCCCCC"
+            android:dividerHeight="2dp"
+            android:paddingLeft="2dp" >
+        </ListView>
+
+
+
+</RelativeLayout>

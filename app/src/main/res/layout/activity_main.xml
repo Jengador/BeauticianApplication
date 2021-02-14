@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A77474"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/user_profile_layout"/>
+
+        <include layout="@layout/dashboard_layout"/>
+
+        <include layout="@layout/activity_my_career_path"/>
+
+        <include layout="@layout/activity_my_past_appointments"/>
+
+        <include layout="@layout/activity_my_financial_situation"/>
+
+        <include layout="@layout/activity_my_incoming_appointments"/>
+
+        <include layout="@layout/activity_my_services"/>
+
+        <include layout="@layout/activity_my_service_location"/>
+
+        <include layout="@layout/activity_my_inbox"/>
+
+        <include layout="@layout/activity_my_service_hours"/>
+
+    </LinearLayout>
+
+</ScrollView>

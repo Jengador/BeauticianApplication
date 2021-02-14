@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myHRManagerLayout"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:background="#B5A5A5">
+
+    <include layout="@layout/user_profile_layout"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sendMessageButton"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#E22F2D2D"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/loginButtonLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/alef_bold"
+                android:text="Send"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="@color/cardview_light_background"
+                android:textColorLink="@color/cardview_light_background"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sendMessageCardView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/sendMessageButton"
+        app:cardBackgroundColor="#E2FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/sendMessageEditText"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/alef_bold"
+                android:hint="Input Message"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/cardview_light_background"
+                android:textColorLink="@color/cardview_light_background"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/myServicesLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A77474"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:id="@+id/myServicesTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/bowlby_one_sc"
+            android:text="@string/services_label"
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/servicesWholeTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myServicesTitleLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_column="0"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Index"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="170dp"
+                android:layout_column="1"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Service"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_column="2"
+                android:layout_weight="1"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Price\n(₺)"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableLayout
+            android:id="@+id/myServicesTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+    </TableLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/servicesWholeTable"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/myServicesSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="150dp" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/serviceDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#E2DDD7D7"
+            app:cardCornerRadius="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/alef_bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Delete Selected Service"
+                    android:textColor="#000000"
+                    android:textColorHighlight="@color/cardview_light_background"
+                    android:textColorLink="@color/cardview_light_background"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:gravity="center">
+
+            <Spinner
+                android:id="@+id/addServiceSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:minWidth="150dp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/addServiceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardBackgroundColor="#E2DDD7D7"
+            app:cardCornerRadius="14dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/alef_bold"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Add new Service"
+                    android:textColor="#000000"
+                    android:textColorHighlight="@color/cardview_light_background"
+                    android:textColorLink="@color/cardview_light_background"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</RelativeLayout>
